@@ -1,6 +1,6 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install transgui googlechrome firefox 7zip putty.install keepass git autohotkey vscode potplayer spotify steam epicgameslauncher goggalaxy origin  tidal hwmonitor 
-choco install  msiafterburner 
+choco install msiafterburner 
 choco install openhardwaremonitor
 
 Write-Output "get keepass-plugin-ioprotocolext"
