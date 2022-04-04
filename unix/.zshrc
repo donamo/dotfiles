@@ -2,7 +2,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-alias ll='ls -alF'
+export PATH="$HOME/bin:$PATH"alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -33,4 +33,7 @@ KUBE_PS1_NS_ENABLE=false
 KUBE_PS1_SUFFIX=""
 KUBE_PS1_DIVIDER=""
 PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%}:${PWD/#$HOME/~} $(kube_ps1):${vcs_info_msg_0_}> '
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
